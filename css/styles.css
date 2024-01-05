@@ -179,7 +179,10 @@ h2 {
   background-color: var(--brand-color-cloud);
   padding: 12px 24px;
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-filters:hover,
@@ -193,20 +196,52 @@ h2 {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.app-storage {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .pointer {
   cursor: pointer;
 }
 
 .row-one {
+  width: calc((100%-48px) / 3);
   display: block;
-  text-decoration: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.row-one:hover,
+.row-one:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .row-one:focus {
-  transform: translateY(0);
-  transform: translateY(0);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.row-one:hover .app-storage {
+  transform: translateY(0%);
+}
+
+.row-one:focus .app-storage {
+  transform: translateY(0%);
+}
+
+.row-one-container {
+  position: relative;
+  overflow: hidden;
 }
 
 .row-header {
@@ -247,12 +282,9 @@ h2 {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  padding: 0;
 }
 
-.portfolio-row-list {
-  flex-basis: calc((100% - 48px) / 3);
-  text-decoration: none;
-}
 
 .portfolio-div-section {
   padding: 32px 16px;
