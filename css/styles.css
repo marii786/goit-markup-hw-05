@@ -176,16 +176,15 @@ h2 {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  background: var(--brand-color-cloud);
+  background-color: var(--brand-color-cloud);
   padding: 12px 24px;
-  border: 1px solid var(--brand-color-cornflower);
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .button-filters:hover,
 .button-filters:focus {
-  background: var(--brand-color-ocean);
+  background-color: var(--brand-color-ocean);
   color: #ffffffff;
   border: 0px solid rgba(0, 0, 0, 0);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -201,14 +200,13 @@ h2 {
 .row-one {
   display: block;
   text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .row-one:hover,
 .row-one:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0);
+  transform: translateY(0);
 }
 
 .row-header {
@@ -242,12 +240,6 @@ h2 {
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
-}
-
-.portfolio-button-sublist {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .portfolio-row-section-list {
