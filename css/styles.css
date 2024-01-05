@@ -104,6 +104,7 @@ h2 {
 }
 
 .nav-link {
+  color: var(--brand-color-ocean);
   color: var(--brand-color-navy-blue);
   font-size: 16px;
   font-weight: 500;
