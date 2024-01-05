@@ -104,13 +104,15 @@ h2 {
 }
 
 .nav-link {
-  color: var(--brand-color-navy-blue);
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-decoration: none;
   padding: 24px 0;
+  position: relative;
+  color: var(--brand-color-ocean);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover {
@@ -119,6 +121,17 @@ h2 {
 
 .nav-link:focus {
   color: var(--brand-color-ocean);
+}
+
+.nav-link::after {
+  content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    background-color: var(--brand-color-ocean);
+    border-radius: 2px;
 }
 
 .header-address {
@@ -147,6 +160,7 @@ h2 {
   letter-spacing: 0.02em;
   font-style: normal;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .row-list {
@@ -331,6 +345,7 @@ h2 {
   justify-content: center;
   align-items: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-media-link:hover,
@@ -394,6 +409,7 @@ h2 {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .first-section-button:hover,
@@ -594,6 +610,7 @@ h2 {
   align-items: center;
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-link:hover,
@@ -647,6 +664,8 @@ h2 {
   align-items: center;
   justify-content: center;
   color: var(--brand-color-light-slate);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .customers-link:hover,
@@ -692,6 +711,12 @@ h2 {
   box-shadow: 0px 1px 1px rgba( 0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.md-sv {
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-btn {
