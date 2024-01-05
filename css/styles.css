@@ -104,9 +104,10 @@ h2 {
 }
 
 .nav-link {
+  color:var(--brand-color-navy-blue);
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0.02em;
   text-decoration: none;
   padding: 24px 0;
@@ -125,13 +126,13 @@ h2 {
 
 .nav-link::after {
   content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    width: 100%;
-    background-color: var(--brand-color-ocean);
-    border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  width: 100%;
+  background-color: var(--brand-color-ocean);
+  border-radius: 2px;
 }
 
 .header-address {
@@ -179,7 +180,10 @@ h2 {
   background-color: var(--brand-color-cloud);
   padding: 12px 24px;
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .button-filters:hover,
@@ -657,8 +661,8 @@ h2 {
   align-items: center;
   justify-content: center;
   color: var(--brand-color-light-slate);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -693,7 +697,6 @@ h2 {
 }
 
 .modal-wind {
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -701,19 +704,17 @@ h2 {
   width: 408px;
   min-height: 584px;
   background: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba( 0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .md-sv {
-
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .modal-btn {
-
   position: absolute;
   top: 24px;
   right: 24px;
@@ -727,18 +728,17 @@ h2 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover {
-background-color: #404bbf;
-  border:none;
+  background-color: #404bbf;
+  border: none;
   fill: #ffffff;
-
 }
 
 .modal-btn:focus {
-
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
